@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:gravity="center"
+        android:text="@string/dialog_title"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/size_20sp" />
+
+    <com.wangzs.dragcontainerview.DragGridView
+        android:id="@+id/dialog_dgv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.wangzs.dragcontainerview.DragGridView>
+
+    <TextView
+        android:id="@+id/dialog_tv_division"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_30dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="@string/dialog_division"
+        android:textColor="@android:color/white" />
+
+    <com.wangzs.dragcontainerview.DragGridView
+        android:id="@+id/dialog_dgv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.wangzs.dragcontainerview.DragGridView>
+
+</LinearLayout>
